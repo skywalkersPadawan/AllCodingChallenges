@@ -33,9 +33,9 @@ The challenges covered in this repository include, but are not limited to:
 <!-- Usage Section -->
 ## Usage
 To run these Python solutions locally, follow these steps:
-1. Clone this repository: `git clone https://github.com/your-username/hackerrank-python-challenges.git`
-2. Navigate to the project directory: `cd hackerrank-python-challenges`
-3. Open a challenge file of your choice: `python challenge_file.py`
+1. Clone this repository: `git clone https://github.com/your-username/AllCodingChallenges.git`
+2. Navigate to the project directory: `cd AllCodingChallenges`
+3. Open a challenge file of your choice: `python name_of_your_python_file.py` (you can chooose a name of your own)
 4. You can modify the code or add your own solutions as well.
 
 Feel free to explore and learn from the solutions in this repository. Happy coding!
