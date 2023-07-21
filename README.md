@@ -1,5 +1,6 @@
 # AllCodingChallenges
 <h1 align="center">HackerRank Python Challenges</h1>
+<h1 align="center">LeetCode Python Challenges</h1>
 
 <p align="center">
   This repository contains my solutions to Python coding challenges on HackerRank. Each challenge is solved with detailed explanations and code snippets.
