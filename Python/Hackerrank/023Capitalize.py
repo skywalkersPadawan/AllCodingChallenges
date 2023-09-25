@@ -9,11 +9,9 @@ import sys
 
 # Complete the solve function below.
 def solve(s):
-    # capitalize the first word in every string
-    s = [word[0].upper() + word[1:] for word in s.split()]
-    s = " ".join(s)
+    for x in s[:].split():
+        s = s.replace(x, x.capitalize())
     return s
-
 
 if __name__ == "__main__":
     fptr = open(os.environ["OUTPUT_PATH"], "w")
@@ -21,3 +19,4 @@ if __name__ == "__main__":
     result = solve(s)
     fptr.write(result + "\n")
     fptr.close()
+    print("The list without omitting spaces : " + str(s))
