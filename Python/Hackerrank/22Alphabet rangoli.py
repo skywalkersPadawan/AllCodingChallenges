@@ -2,13 +2,14 @@ def print_rangoli(size):
     # your code goes here
     import string
 
-    alphabet = string.ascii_lowercase
+    design = string.ascii_lowercase
 
-    for i in range(size - 1, 0, -1):
-        pattern = "-".join(alphabet[size - 1 : i : -1] + alphabet[i:size])
-        print(pattern.center(4 * size - 3, "-"))
+    L = []
+    for i in range(n):
+        s = "-".join(design[i:n])
+        L.append((s[::-1] + s[1:]).center(4 * n - 3, "-"))
 
-    print("-".join(alphabet[size - 1 : 0 : -1]))
+    print("\n".join(L[:0:-1] + L))
 
 
 if __name__ == "__main__":

@@ -1,26 +1,30 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-width = 5
+# Replace all ______ with rjust, ljust or center.
+
+thickness = int(input())  # This must be an odd number
 c = "H"
 
-# top cone
-for i in range(1, width * 2 - 1 + 1, 2):
-    print((c * i).center(width * 2 - 1))
+# Top Cone
+for i in range(thickness):
+    print((c * i).rjust(thickness - 1) + c + (c * i).ljust(thickness - 1))
 
-# top pillar
-for i in range(0, width + 1):
-    print((c * width).center(width * 2) + (c * width).center(width * 6))
+# Top Pillars
+for i in range(thickness + 1):
+    print((c * thickness).center(thickness * 2) + (c * thickness).center(thickness * 6))
 
-# middle part
-for i in range((width + 1) // 2):
-    print((c * width * 5).center(width * 6))
+# Middle Belt
+for i in range((thickness + 1) // 2):
+    print((c * thickness * 5).center(thickness * 6))
 
-# lower pillar
-for i in range(0, width + 1):
-    print((c * width).center(width * 2) + (c * width).center(width * 6))
+# Bottom Pillars
+for i in range(thickness + 1):
+    print((c * thickness).center(thickness * 2) + (c * thickness).center(thickness * 6))
 
-# lower cone
-for i in range(width * 2 - 1, -1, -2):
-    print((c * i).center((width * 2 - 1 + 1) * 5))
-
-
-# need to understand how to solve this problem later, need try solving this to understand how to print patterns
+# Bottom Cone
+for i in range(thickness):
+    print(
+        (
+            (c * (thickness - i - 1)).rjust(thickness)
+            + c
+            + (c * (thickness - i - 1)).ljust(thickness)
+        ).rjust(thickness * 6)
+    )
