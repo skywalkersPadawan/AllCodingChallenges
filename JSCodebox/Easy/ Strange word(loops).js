@@ -1,6 +1,6 @@
 function strangeWord(word) {
   let result = '';
-  for (let i = 0; i < word.length; i = i + 2) {
+  for (let i = 0; i < word.ngth; i = i + 2) {
     result = result + word[i];
   }
 
